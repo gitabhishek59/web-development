@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+    <style type="text/css">
+        .div{
+            width: 50%;
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+            background-color: khaki;
+        }
+         .div2{
+            background-color: greenyellow;
+        }
+
+        .btn{
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+    <h1>This is Sum calculator</h1>
+    <div class="div2">
+    <input id="num1" type="number" placeholder="Enter num1"><br><br>
+    <input id="num2" type="number" placeholder="Enter num2"><br><br>
+    <button class="btn" type="submit" onclick="result()">Result</button>
+    </div>
+    <p id="res"></p>
+
+    </div>
+</body>
+<script>
+    function result(){
+        var a=document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        var c=parseFloat(a)+parseFloat(b);
+        document.getElementById("res").innerHTML=c;
+    }
+</script>
+</html>
