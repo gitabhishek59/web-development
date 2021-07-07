@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        #time{
+            height: 40%;
+            border: 2px solid rgb(8, 15, 17);
+            background-color: khaki;
+            padding: 20px;
+            /* margin-top: 200px;
+            margin-left: 470px; */
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <h1 style="text-align: center;">Time</h1>
+    </div> -->
+    <p id="time"></p>
+</body>
+<script>
+    // setTimeout  ---> Allows us to run the function once after the interval of time
+    // clearTimeout --->Allows us to run the function repeatedly after the interval of time
+    // function greet(name){
+    //   timeout=  console.log("Welcome ot javaScript classes"+name);
+
+    // }
+    // setTimeout(greet,5000,"Abhishek");
+    // // clearTimeout(greet); // use to stop the running of above seTimeout
+
+
+
+//     function greet1(name){
+//         console.log("this is time interval repeating function"+" "+name);
+//     }
+//    setTime=setInterval(greet1,2000,'Abhishek');//it wilol repeat the calling ater each 2 second
+//   // clearInterval(setTime);  
+
+
+///  How to dispaly time in out website this will be done using above function
+// timeshow(displaytime,1000);
+function displaytime(){
+    time=new Date();
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(displaytime, 1000);
+    
+
+</script>
+</html>
