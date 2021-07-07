@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evevnt</title>
+    <style>
+        #btn{
+            background-color: brown;
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color: darkblue;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="like()">Like</button>
+    <button id="btn" onclick="dislike()">Dislike</button>
+    <div class="p">
+        <p id="para" style="background-color:gray; border: 2px solid black; height: 30px; width: 20%;"></p>
+    </div>
+</body>
+
+<script>
+     let count=0;
+    function like(){
+     count++;
+     document.getElementById('para').innerHTML=count;
+    }
+
+    function dislike(){
+    if(count>0){
+     count--;
+     document.getElementById('para').innerHTML=count;
+        }
+    }
+
+</script>
+</html>
